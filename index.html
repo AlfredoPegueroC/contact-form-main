@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <main class="container">
+    <div class="success">
+      <h1> <img src="/assets/images/icon-success-check.svg" alt="check">Message Sent!</h1>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <form class="form">
+      <h1 class="title">Contact Us</h1>
+      <div class="names">
+        <div class="name_group">
+          <label for="name">First Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="name_group">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="LastName" required />
+        </div>
+
+      </div>
+      <label for="Email">Email Address</label>
+      <input type="email" id="Email" id="Email" required />
+      <div class="query">
+        <label for="general">Query Type</label>
+        <input type="radio" name="general" value="1" required id="option1" checked />
+        <input type="radio" name="general" value="2" required id="option2"/>
+      </div>
+      <label for="area">Message</label>
+      <textarea name="area" id="area" cols="20" rows="5" required></textarea>
+
+
+      <div class="agreement">
+        <input type="checkbox" id="check" required />
+        <label for="check">I hereby consent to being contacted by the team</label>
+
+      </div>
+
+      <input class="btn" type="submit" value="Submit" />
+    </form>
+  </main>
+
+
+  <script src="app.js"></script>
+  <!-- 
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

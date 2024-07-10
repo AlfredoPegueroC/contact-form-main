@@ -1,0 +1,109 @@
+* {
+  font: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+.container {
+  position: relative;
+  max-width: 768px;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: hsl(185, 24%, 22%);
+}
+input,
+textarea {
+  padding-block: 1rem;
+  padding-inline: 1rem 6rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+label{
+  color: hsl(180, 3%, 39%);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.names {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.name_group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding-block: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: hsl(169, 82%, 27%);
+}
+/* SUCCEED*/
+
+.success{
+  opacity: 0;
+  position: absolute;
+  padding: 1rem;
+  border-radius: 10px;
+  background: hwb(185 16% 73%);
+  color: white;
+  top: -7rem;
+  left: 11rem;
+}
+.success h1{
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
