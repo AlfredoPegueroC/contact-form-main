@@ -1,0 +1,31 @@
+.error-message {
+  border: hsl(0, 66%, 54%) 1px solid;
+}
+.name_group label.error:after {
+  content: "This field is required";
+  position: absolute;
+  color: hsl(0, 66%, 54%);
+  bottom: -1.3rem;
+  left: 0;
+}
+.name_group label.error-email:after {
+  content: "Please enter a valid email address";
+  position: absolute;
+  color: hsl(0, 66%, 54%);
+  bottom: -1.3rem;
+  left: 0;
+}
+.check.error::after {
+  content: "To submit this form, please consent to being contacted";
+  position: absolute;
+  color: hsl(0, 66%, 54%);
+  bottom: -1.3rem;
+  left: 0;
+}
+.query.error::after{
+  content: "Please select a query type";
+  position: absolute;
+  color: hsl(0, 66%, 54%);
+  bottom: -.75rem;
+  left: 0;
+}
